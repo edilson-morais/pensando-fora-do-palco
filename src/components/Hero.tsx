@@ -14,7 +14,7 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8 lg:pr-8">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-yellow-400 leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-yellow-400 leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
                 Pensando
                 <br />
                 Fora do Palco
@@ -49,7 +49,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-96 md:w-96 md:h-[500px] bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-3xl overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500">
                 <img 
-                  src="/lovable-uploads/d944cdc8-7bc7-46d3-9cec-caea29a0d1d5.png"
+                  src="/lovable-uploads/ece17cc7-916a-470c-acab-0f00f2a65427.png"
                   alt="Professional presenter pointing upward"
                   className="w-full h-full object-cover"
                 />
