@@ -14,7 +14,7 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8 lg:pr-8">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-yellow-400 leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-yellow-400 leading-tight" style={{ fontFamily: 'Times, serif' }}>
                 Pensando
                 <br />
                 Fora do Palco
