@@ -49,7 +49,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-96 md:w-96 md:h-[500px] bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-3xl overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500">
                 <img 
-                  src="/lovable-uploads/5e32644c-46c0-4541-aec8-717cf89ca731.png"
+                  src="/lovable-uploads/d944cdc8-7bc7-46d3-9cec-caea29a0d1d5.png"
                   alt="Professional presenter pointing upward"
                   className="w-full h-full object-cover"
                 />
