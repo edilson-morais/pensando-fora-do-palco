@@ -1,7 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+  const whatsappLink = "https://api.whatsapp.com/send/?phone=554797083422&text=Ol%C3%A1,+vim+da+p%C3%A1gina+*Pensando+Fora+do+Palco";
+
   return (
     <section className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
       {/* Animated background elements */}
@@ -52,46 +53,50 @@ const Hero = () => {
               </div>
             </div>
             
-            {/* Modern CTA Button */}
+            {/* Modern CTA Button with WhatsApp link */}
             <div className="flex justify-start">
-              <Button className="group relative bg-gradient-to-r from-green-500 via-green-400 to-green-500 hover:from-green-400 hover:via-green-300 hover:to-green-400 text-black font-bold py-6 px-10 rounded-2xl text-lg transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/25 border-0 overflow-hidden">
-                <span className="relative z-10 flex items-center gap-3">
-                  QUERO AGENDAR UMA REUNIÃO
-                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-              </Button>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <Button className="group relative bg-gradient-to-r from-green-500 via-green-400 to-green-500 hover:from-green-400 hover:via-green-300 hover:to-green-400 text-black font-bold py-6 px-10 rounded-2xl text-lg transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/25 border-0 overflow-hidden">
+                  <span className="relative z-10 flex items-center gap-3">
+                    QUERO AGENDAR UMA REUNIÃO
+                    <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                </Button>
+              </a>
             </div>
           </div>
           
-          {/* Right Content - Modern Image Card */}
+          {/* Right Content - Modern Image Card with WhatsApp link */}
           <div className="flex justify-center lg:justify-end animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <div className="relative group">
-              {/* Glowing backdrop */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400/20 to-green-400/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500 opacity-75 group-hover:opacity-100"></div>
-              
-              {/* Main image container with glassmorphism */}
-              <div className="relative w-80 h-96 md:w-96 md:h-[500px] bg-gradient-to-br from-yellow-400/90 via-yellow-500/80 to-yellow-600/90 backdrop-blur-sm rounded-3xl overflow-hidden transform rotate-2 hover:rotate-0 transition-all duration-700 shadow-2xl border border-white/20 group-hover:scale-105">
-                <img 
-                  src="/lovable-uploads/ece17cc7-916a-470c-acab-0f00f2a65427.png"
-                  alt="Professional presenter pointing upward"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                />
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="block">
+              <div className="relative group cursor-pointer">
+                {/* Glowing backdrop */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400/20 to-green-400/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500 opacity-75 group-hover:opacity-100"></div>
                 
-                {/* Gradient overlay for depth */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
+                {/* Main image container with glassmorphism */}
+                <div className="relative w-80 h-96 md:w-96 md:h-[500px] bg-gradient-to-br from-yellow-400/90 via-yellow-500/80 to-yellow-600/90 backdrop-blur-sm rounded-3xl overflow-hidden transform rotate-2 hover:rotate-0 transition-all duration-700 shadow-2xl border border-white/20 group-hover:scale-105">
+                  <img 
+                    src="/lovable-uploads/ece17cc7-916a-470c-acab-0f00f2a65427.png"
+                    alt="Professional presenter pointing upward"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  
+                  {/* Gradient overlay for depth */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
+                  
+                  {/* Floating elements */}
+                  <div className="absolute top-4 right-4 w-3 h-3 bg-yellow-300 rounded-full animate-ping"></div>
+                  <div className="absolute bottom-8 left-6 w-2 h-2 bg-green-300 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                </div>
                 
-                {/* Floating elements */}
-                <div className="absolute top-4 right-4 w-3 h-3 bg-yellow-300 rounded-full animate-ping"></div>
-                <div className="absolute bottom-8 left-6 w-2 h-2 bg-green-300 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                {/* Decorative elements */}
+                <div className="absolute -top-6 -left-6 w-12 h-12 border-2 border-yellow-400/40 rounded-full animate-spin" style={{ animationDuration: '8s' }}></div>
+                <div className="absolute -bottom-4 -right-4 w-8 h-8 border-2 border-green-400/40 rounded-lg animate-bounce" style={{ animationDelay: '1s' }}></div>
               </div>
-              
-              {/* Decorative elements */}
-              <div className="absolute -top-6 -left-6 w-12 h-12 border-2 border-yellow-400/40 rounded-full animate-spin" style={{ animationDuration: '8s' }}></div>
-              <div className="absolute -bottom-4 -right-4 w-8 h-8 border-2 border-green-400/40 rounded-lg animate-bounce" style={{ animationDelay: '1s' }}></div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
