@@ -31,7 +31,7 @@ const FinalCTA = () => {
                   <span className="text-red-500">"</span>Você veio buscar<br />
                   estratégia para melhorar<br />
                   sua comunicação e elevar<br />
-                  seu poscionamento.<span className="text-red-500">"</span>
+                  seu posicionamento.<span className="text-red-500">"</span>
                 </div>
                 
                 <p className="text-2xl md:text-3xl font-bold text-yellow-400">
