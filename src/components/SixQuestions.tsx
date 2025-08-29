@@ -1,4 +1,5 @@
 const SixQuestions = () => {
+  const whatsappLink = "https://api.whatsapp.com/send/?phone=554797083422&text=Ol%C3%A1,+vim+da+p%C3%A1gina+*Pensando+Fora+do+Palco*";
   return (
     <section className="py-20 bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white relative overflow-hidden">
       {/* Background effects */}
@@ -29,9 +30,11 @@ const SixQuestions = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left side - Green badge */}
             <div className="flex justify-center lg:justify-start">
-              <div className="bg-green-500 text-black font-bold py-4 px-8 rounded-full text-lg hover:bg-green-400 transition-all duration-300 transform hover:scale-105">
-                FAZ SENTIDO PRA MIM.
-              </div>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <div className="bg-green-500 text-black font-bold py-4 px-8 rounded-full text-lg hover:bg-green-400 transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                  FAZ SENTIDO PRA MIM.
+                </div>
+              </a>
             </div>
 
             {/* Right side - Content points */}
