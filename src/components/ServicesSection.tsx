@@ -78,10 +78,12 @@ const ServicesSection = () => {
             </div>
 
             {/* Right Column - Services Cards */}
-            <div className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-6">
+              <div className="grid grid-cols-2 gap-4 max-w-2xl">
                 {services.map((cardProps, index) => (
-                  <ServiceCards key={index} cards={[cardProps]} />
+                  <div key={index} className="min-h-[200px]">
+                    <ServiceCards cards={[cardProps]} />
+                  </div>
                 ))}
               </div>
               
