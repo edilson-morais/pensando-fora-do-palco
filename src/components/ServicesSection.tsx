@@ -50,12 +50,12 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[hsl(198,85%,12%)] via-[hsl(201,75%,18%)] to-[hsl(195,100%,10%)] text-black relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 text-black relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 id="services" className="text-4xl md:text-5xl font-bold mb-12 text-white">
+            <h2 id="services" className="text-4xl md:text-5xl font-bold mb-12">
               Como posso te servir?
             </h2>
           </div>

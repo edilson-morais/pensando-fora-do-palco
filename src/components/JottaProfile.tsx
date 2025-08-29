@@ -1,6 +1,6 @@
 const JottaProfile = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-[hsl(195,100%,8%)] via-[hsl(198,85%,12%)] to-[hsl(201,75%,15%)] text-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-yellow-400/10 rounded-full blur-3xl animate-pulse"></div>

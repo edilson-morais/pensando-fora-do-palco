@@ -12,7 +12,7 @@ const TrainingClients = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[hsl(201,75%,15%)] via-[hsl(195,100%,8%)] to-[hsl(198,85%,12%)] text-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
       {/* Modern geometric background */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl"></div>
@@ -25,7 +25,7 @@ const TrainingClients = () => {
           {/* Modern Header */}
           <div className="text-center mb-16">
             <div className="inline-block bg-gradient-to-r from-yellow-500/20 to-amber-500/20 backdrop-blur-sm rounded-2xl p-1 mb-6">
-              <div className="bg-[hsl(195,100%,8%)]/80 rounded-xl px-8 py-6">
+              <div className="bg-black/80 rounded-xl px-8 py-6">
                 <h2 id="training-clients" className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-500 bg-clip-text text-transparent">
                   Com quem o Jotta treinou presencial?
                 </h2>
@@ -40,7 +40,7 @@ const TrainingClients = () => {
               return (
                 <div key={index} className="group relative">
                   <div className="absolute -inset-0.5 bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
-                  <div className="relative bg-[hsl(198,85%,10%)]/90 backdrop-blur-sm border border-[hsl(201,75%,22%)]/50 rounded-2xl p-8 hover:border-yellow-400/50 transition-all duration-500 hover:transform hover:scale-[1.02]">
+                  <div className="relative bg-black/90 backdrop-blur-sm border border-gray-800/50 rounded-2xl p-8 hover:border-yellow-400/50 transition-all duration-500 hover:transform hover:scale-[1.02]">
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0 w-3 h-3 bg-gradient-to-r from-yellow-400 to-amber-400 rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
                       <div>

@@ -4,7 +4,7 @@ const Hero = () => {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=554797083422&text=Ol%C3%A1,+vim+da+p%C3%A1gina+*Pensando+Fora+do+Palco*";
 
   return (
-    <header className="min-h-screen bg-gradient-to-br from-[hsl(195,100%,8%)] via-[hsl(198,85%,12%)] to-[hsl(201,75%,15%)] text-white relative overflow-hidden">
+    <header className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-yellow-400/10 rounded-full blur-3xl animate-pulse"></div>
