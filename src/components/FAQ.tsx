@@ -15,7 +15,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-[hsl(195,100%,8%)] via-[hsl(201,75%,15%)] to-[hsl(198,85%,12%)] text-white relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-64 h-64 bg-yellow-400/5 rounded-full blur-3xl"></div>

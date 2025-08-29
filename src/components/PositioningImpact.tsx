@@ -2,7 +2,7 @@ const PositioningImpact = () => {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=554797083422&text=Ol%C3%A1,+vim+da+p%C3%A1gina+*Pensando+Fora+do+Palco*";
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-[hsl(201,75%,15%)] via-[hsl(198,85%,12%)] to-[hsl(195,100%,8%)] text-white relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-64 h-64 bg-yellow-400/5 rounded-full blur-3xl"></div>

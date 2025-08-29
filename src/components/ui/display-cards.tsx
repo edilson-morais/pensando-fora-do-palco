@@ -69,7 +69,7 @@ function ServiceCard({
   return (
     <div
       className={cn(
-        "relative group bg-black/40 backdrop-blur-sm border-2 rounded-2xl p-6 transition-all duration-500 hover:scale-105 hover:shadow-2xl",
+        "relative group bg-[hsl(198,85%,10%)]/60 backdrop-blur-sm border-2 rounded-2xl p-6 transition-all duration-500 hover:scale-105 hover:shadow-2xl",
         colorStyle.bg,
         colorStyle.border,
         colorStyle.glow,
@@ -85,7 +85,7 @@ function ServiceCard({
           <div className={cn("w-12 h-12 rounded-xl flex items-center justify-center", colorStyle.icon)}>
             {icon}
           </div>
-          <span className="text-xs font-medium text-gray-400 bg-gray-800/50 px-3 py-1 rounded-full">
+          <span className="text-xs font-medium text-gray-300 bg-[hsl(201,75%,12%)]/80 px-3 py-1 rounded-full">
             {category}
           </span>
         </div>
@@ -96,7 +96,7 @@ function ServiceCard({
         </h3>
 
         {/* Description */}
-        <p className="text-gray-300 text-sm leading-relaxed">
+        <p className="text-gray-200 text-sm leading-relaxed">
           {description}
         </p>
       </div>

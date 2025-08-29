@@ -47,54 +47,56 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Custom theme colors */
-    --theme-yellow: 45 100% 60%;
-    --theme-green: 142 71% 45%;
-    --theme-blue: 217 91% 60%;
+    /* Petroleum Blue Theme */
+    --petrol-primary: 195 100% 8%;
+    --petrol-secondary: 198 85% 15%;
+    --petrol-accent: 201 75% 22%;
+    --petrol-light: 204 65% 35%;
   }
 
   .dark {
-    --background: 224 71% 4%;
-    --foreground: 213 31% 91%;
+    --background: 195 100% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 224 71% 4%;
-    --card-foreground: 213 31% 91%;
+    --card: 198 85% 12%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 224 71% 4%;
-    --popover-foreground: 213 31% 91%;
+    --popover: 198 85% 12%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 45 100% 60%;
+    --primary-foreground: 195 100% 8%;
 
-    --secondary: 222.2 47.4% 11.2%;
+    --secondary: 198 85% 15%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 223 47% 11%;
-    --muted-foreground: 215.4 16.3% 56.9%;
+    --muted: 201 75% 15%;
+    --muted-foreground: 215.4 16.3% 65.9%;
 
-    --accent: 216 34% 17%;
+    --accent: 201 75% 22%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 216 34% 17%;
-    --input: 216 34% 17%;
-    --ring: 216 34% 17%;
+    --border: 201 75% 22%;
+    --input: 201 75% 22%;
+    --ring: 45 100% 60%;
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 195 100% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 45 100% 60%;
+    --sidebar-primary-foreground: 195 100% 8%;
+    --sidebar-accent: 198 85% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 201 75% 22%;
+    --sidebar-ring: 45 100% 60%;
 
-    /* Custom theme colors for dark mode */
-    --theme-yellow: 45 100% 60%;
-    --theme-green: 142 71% 45%;
-    --theme-blue: 217 91% 60%;
+    /* Petroleum Blue Theme Variables */
+    --petrol-primary: 195 100% 8%;
+    --petrol-secondary: 198 85% 15%;
+    --petrol-accent: 201 75% 22%;
+    --petrol-light: 204 65% 35%;
   }
 }
 

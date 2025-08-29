@@ -2,7 +2,7 @@ const Footer = () => {
   const privacyLink = "https://politica-de-privacidade.rota50ia.com/";
 
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12 px-6">
+    <footer className="bg-gradient-to-br from-[hsl(195,100%,8%)] via-[hsl(198,85%,12%)] to-[hsl(201,75%,15%)] text-gray-300 py-12 px-6">
       <div className="container mx-auto max-w-6xl">
         {/* Disclaimer */}
         <div className="text-center mb-8">
