@@ -17,8 +17,12 @@ const FinalCTA = () => {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400/20 to-orange-400/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500 opacity-75"></div>
                 <div className="relative w-80 h-96 md:w-96 md:h-[500px] bg-gradient-to-br from-yellow-400/90 via-yellow-500/80 to-orange-600/90 rounded-3xl overflow-hidden shadow-2xl border border-white/20">
-                  <div className="w-full h-full bg-gradient-to-br from-gray-800 to-black flex items-center justify-center">
-                    
+                  <div className="w-full h-full bg-gradient-to-br from-gray-800 to-black flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/e68169ef-98ce-4c44-8199-05027688e64f.png"
+                      alt="Jotta apresentando"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
