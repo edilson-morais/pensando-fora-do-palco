@@ -17,8 +17,9 @@ const JottaProfile = () => {
                 <div className="relative w-72 h-96 md:w-80 md:h-[480px] rounded-3xl overflow-hidden shadow-2xl border border-white/20">
                   <img 
                     src="/lovable-uploads/c6c29b16-69c3-45ad-baf9-4a8f5e58e0b6.png" 
-                    alt="Jotta - CEO da MJ Backline e criador do projeto PFDP"
+                    alt="Jotta - CEO da MJ Backline e criador do projeto PFDP, especialista em marca pessoal e comunicação empresarial"
                     className="w-full h-full object-cover object-center"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -27,7 +28,7 @@ const JottaProfile = () => {
             {/* Right side - Content */}
             <div className="space-y-8">
               <div className="space-y-6">
-                <p className="text-lg text-yellow-400 font-semibold">
+                <p id="jotta-profile" className="text-lg text-yellow-400 font-semibold">
                   É aquele cara que não faz questão de agradar ninguém!
                 </p>
                 <p className="text-lg leading-relaxed text-gray-200">

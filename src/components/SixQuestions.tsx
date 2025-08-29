@@ -15,7 +15,7 @@ const SixQuestions = () => {
             <div className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-bold py-3 px-8 rounded-full text-lg mb-8">
               6 Perguntas
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
+            <h2 id="six-questions" className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
               Quais são as primeiras<br />
               marcas que vem a sua<br />
               memória?

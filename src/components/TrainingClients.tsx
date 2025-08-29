@@ -26,7 +26,7 @@ const TrainingClients = () => {
           <div className="text-center mb-16">
             <div className="inline-block bg-gradient-to-r from-yellow-500/20 to-amber-500/20 backdrop-blur-sm rounded-2xl p-1 mb-6">
               <div className="bg-black/80 rounded-xl px-8 py-6">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-500 bg-clip-text text-transparent">
+                <h2 id="training-clients" className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-500 bg-clip-text text-transparent">
                   Com quem o Jotta treinou presencial?
                 </h2>
               </div>
@@ -62,8 +62,9 @@ const TrainingClients = () => {
           <div className="text-center">
             <img 
               src="/lovable-uploads/2327ff3b-d468-4588-9957-fc2e445841d8.png"
-              alt="Fotos dos treinamentos presenciais do Jotta"
+              alt="Fotos dos treinamentos presenciais do Jotta com clientes - demonstrando experiência prática em mentoria de marca pessoal"
               className="w-full max-w-5xl mx-auto rounded-2xl shadow-2xl"
+              loading="lazy"
             />
           </div>
         </div>

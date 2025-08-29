@@ -20,8 +20,9 @@ const FinalCTA = () => {
                   <div className="w-full h-full bg-gradient-to-br from-gray-800 to-black flex items-center justify-center overflow-hidden">
                     <img 
                       src="/lovable-uploads/e68169ef-98ce-4c44-8199-05027688e64f.png"
-                      alt="Jotta apresentando"
+                      alt="Jotta, mentor em marca pessoal e comunicação estratégica, apresentando com microfone"
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -31,12 +32,12 @@ const FinalCTA = () => {
             {/* Right side - Quote and CTA */}
             <div className="space-y-8">
               <div className="space-y-6">
-                <div className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                <h3 id="final-cta" className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   <span className="text-red-500">"</span>Você veio buscar<br />
                   estratégia para melhorar<br />
                   sua comunicação e elevar<br />
                   seu posicionamento.<span className="text-red-500">"</span>
-                </div>
+                </h3>
                 
                 <p className="text-2xl md:text-3xl font-bold text-yellow-400">
                   Você não chegou aqui por acaso!

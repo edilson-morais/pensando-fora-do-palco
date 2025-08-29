@@ -7,7 +7,7 @@ const CommunicationSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-12 leading-tight">
+            <h2 id="communication" className="text-4xl md:text-5xl lg:text-6xl font-bold mb-12 leading-tight">
               A comunicação é treinável.
             </h2>
           </div>
@@ -39,8 +39,9 @@ const CommunicationSection = () => {
                 <div className="aspect-square rounded-lg mb-4 overflow-hidden">
                   <img 
                     src={person.image} 
-                    alt={person.title}
+                    alt={`${person.title} - exemplo de comunicação e posicionamento estratégico`}
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <div className="space-y-3">

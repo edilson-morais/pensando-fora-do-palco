@@ -12,18 +12,34 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div>
+    <main>
       <Hero />
-      <SixQuestions />
-      <CommunicationSection />
-      <JottaProfile />
-      <PositioningImpact />
-      <ServicesSection />
-      <FAQ />
-      <TrainingClients />
-      <FinalCTA />
+      <section aria-labelledby="six-questions">
+        <SixQuestions />
+      </section>
+      <section aria-labelledby="communication">
+        <CommunicationSection />
+      </section>
+      <section aria-labelledby="jotta-profile">
+        <JottaProfile />
+      </section>
+      <section aria-labelledby="positioning-impact">
+        <PositioningImpact />
+      </section>
+      <section aria-labelledby="services">
+        <ServicesSection />
+      </section>
+      <section aria-labelledby="faq">
+        <FAQ />
+      </section>
+      <section aria-labelledby="training-clients">
+        <TrainingClients />
+      </section>
+      <section aria-labelledby="final-cta">
+        <FinalCTA />
+      </section>
       <Footer />
-    </div>
+    </main>
   );
 };
 

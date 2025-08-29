@@ -34,7 +34,7 @@ const ServicesSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-12">
+            <h2 id="services" className="text-4xl md:text-5xl font-bold mb-12">
               Como posso te servir?
             </h2>
           </div>

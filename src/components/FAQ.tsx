@@ -26,7 +26,7 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 id="faq" className="text-4xl md:text-5xl font-bold mb-4">
               PERGUNTAS FREQUENTES:
             </h2>
           </div>

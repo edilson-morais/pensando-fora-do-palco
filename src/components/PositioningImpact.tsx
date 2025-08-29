@@ -14,7 +14,7 @@ const PositioningImpact = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Mobile screenshots */}
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8">
+              <h2 id="positioning-impact" className="text-3xl md:text-4xl font-bold mb-8">
                 IMPACTO DO POSICIONAMENTO
               </h2>
               
@@ -22,8 +22,9 @@ const PositioningImpact = () => {
               <div className="flex justify-center">
                 <img 
                   src="/lovable-uploads/7b9f7424-c669-4fe9-9d19-c8f832508409.png"
-                  alt="Screenshots de impacto do posicionamento"
+                  alt="Resultados do impacto do posicionamento - screenshots de depoimentos de clientes satisfeitos"
                   className="max-w-full h-auto rounded-lg"
+                  loading="lazy"
                 />
               </div>
 
@@ -38,8 +39,9 @@ const PositioningImpact = () => {
               <div className="relative">
                 <img 
                   src="/lovable-uploads/5b9bbdb5-82b3-44c9-96e5-3870962e951b.png" 
-                  alt="Jotta - Especialista em Posicionamento"
+                  alt="Jotta - Especialista em comunicação, marca pessoal e posicionamento estratégico para empresários"
                   className="w-64 h-80 md:w-72 md:h-96 object-cover object-center"
+                  loading="lazy"
                 />
               </div>
 
