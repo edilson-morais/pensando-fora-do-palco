@@ -1,69 +1,118 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Sparkles } from "lucide-react";
 
-interface DisplayCardProps {
+interface ServiceCardProps {
   className?: string;
   icon?: React.ReactNode;
   title?: string;
   description?: string;
-  date?: string;
-  iconClassName?: string;
-  titleClassName?: string;
+  category?: string;
+  color?: "yellow" | "green" | "blue" | "purple" | "orange" | "red";
 }
 
-function DisplayCard({
+function ServiceCard({
   className,
-  icon = <Sparkles className="size-4 text-blue-300" />,
-  title = "Featured",
-  description = "Discover amazing content",
-  date = "Just now",
-  iconClassName = "text-blue-500",
-  titleClassName = "text-blue-500",
-}: DisplayCardProps) {
+  icon,
+  title = "Serviço",
+  description = "Descrição do serviço",
+  category = "Online",
+  color = "yellow",
+}: ServiceCardProps) {
+  const colorVariants = {
+    yellow: {
+      bg: "bg-gradient-to-br from-yellow-500/20 to-amber-600/20",
+      border: "border-yellow-400/30 hover:border-yellow-400/60",
+      icon: "bg-yellow-500 text-black",
+      title: "text-yellow-400",
+      glow: "hover:shadow-yellow-400/20"
+    },
+    green: {
+      bg: "bg-gradient-to-br from-green-500/20 to-emerald-600/20", 
+      border: "border-green-400/30 hover:border-green-400/60",
+      icon: "bg-green-500 text-black",
+      title: "text-green-400",
+      glow: "hover:shadow-green-400/20"
+    },
+    blue: {
+      bg: "bg-gradient-to-br from-blue-500/20 to-cyan-600/20",
+      border: "border-blue-400/30 hover:border-blue-400/60", 
+      icon: "bg-blue-500 text-white",
+      title: "text-blue-400",
+      glow: "hover:shadow-blue-400/20"
+    },
+    purple: {
+      bg: "bg-gradient-to-br from-purple-500/20 to-violet-600/20",
+      border: "border-purple-400/30 hover:border-purple-400/60",
+      icon: "bg-purple-500 text-white", 
+      title: "text-purple-400",
+      glow: "hover:shadow-purple-400/20"
+    },
+    orange: {
+      bg: "bg-gradient-to-br from-orange-500/20 to-red-600/20",
+      border: "border-orange-400/30 hover:border-orange-400/60",
+      icon: "bg-orange-500 text-black",
+      title: "text-orange-400", 
+      glow: "hover:shadow-orange-400/20"
+    },
+    red: {
+      bg: "bg-gradient-to-br from-red-500/20 to-pink-600/20",
+      border: "border-red-400/30 hover:border-red-400/60",
+      icon: "bg-red-500 text-white",
+      title: "text-red-400",
+      glow: "hover:shadow-red-400/20"
+    }
+  };
+
+  const colorStyle = colorVariants[color];
+
   return (
     <div
       className={cn(
-        "relative flex h-36 w-[22rem] -skew-y-[8deg] select-none flex-col justify-between rounded-xl border-2 bg-muted/70 backdrop-blur-sm px-4 py-3 transition-all duration-700 after:absolute after:-right-1 after:top-[-5%] after:h-[110%] after:w-[20rem] after:bg-gradient-to-l after:from-background after:to-transparent after:content-[''] hover:border-white/20 hover:bg-muted [&>*]:flex [&>*]:items-center [&>*]:gap-2",
+        "relative group bg-black/40 backdrop-blur-sm border-2 rounded-2xl p-6 transition-all duration-500 hover:scale-105 hover:shadow-2xl",
+        colorStyle.bg,
+        colorStyle.border,
+        colorStyle.glow,
         className
       )}
     >
-      <div>
-        <span className="relative inline-block rounded-full bg-blue-800 p-1">
-          {icon}
-        </span>
-        <p className={cn("text-lg font-medium", titleClassName)}>{title}</p>
+      {/* Background glow effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      
+      <div className="relative z-10 space-y-4">
+        {/* Icon and Category */}
+        <div className="flex items-center justify-between">
+          <div className={cn("w-12 h-12 rounded-xl flex items-center justify-center", colorStyle.icon)}>
+            {icon}
+          </div>
+          <span className="text-xs font-medium text-gray-400 bg-gray-800/50 px-3 py-1 rounded-full">
+            {category}
+          </span>
+        </div>
+
+        {/* Title */}
+        <h3 className={cn("text-xl font-bold leading-tight", colorStyle.title)}>
+          {title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-gray-300 text-sm leading-relaxed">
+          {description}
+        </p>
       </div>
-      <p className="whitespace-nowrap text-lg">{description}</p>
-      <p className="text-muted-foreground">{date}</p>
     </div>
   );
 }
 
-interface DisplayCardsProps {
-  cards?: DisplayCardProps[];
+interface ServiceCardsProps {
+  cards?: ServiceCardProps[];
 }
 
-export default function DisplayCards({ cards }: DisplayCardsProps) {
-  const defaultCards = [
-    {
-      className: "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration:700 hover:grayscale-0 before:left-0 before:top-0",
-    },
-    {
-      className: "[grid-area:stack] translate-x-16 translate-y-10 hover:-translate-y-1 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration:700 hover:grayscale-0 before:left-0 before:top-0",
-    },
-    {
-      className: "[grid-area:stack] translate-x-32 translate-y-20 hover:translate-y-10",
-    },
-  ];
-
-  const displayCards = cards || defaultCards;
-
+export default function ServiceCards({ cards = [] }: ServiceCardsProps) {
   return (
-    <div className="grid [grid-template-areas:'stack'] place-items-center opacity-100 animate-in fade-in-0 duration-700">
-      {displayCards.map((cardProps, index) => (
-        <DisplayCard key={index} {...cardProps} />
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {cards.map((cardProps, index) => (
+        <ServiceCard key={index} {...cardProps} />
       ))}
     </div>
   );

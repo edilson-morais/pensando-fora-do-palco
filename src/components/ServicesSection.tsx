@@ -1,4 +1,4 @@
-import DisplayCards from "@/components/ui/display-cards";
+import ServiceCards from "@/components/ui/display-cards";
 import { Star, Video, BookOpen, Users, Clock, FileText } from "lucide-react";
 
 const ServicesSection = () => {
@@ -6,61 +6,46 @@ const ServicesSection = () => {
 
   const services = [
     {
-      icon: <Star className="size-4 text-yellow-300" />,
+      icon: <Star className="size-6" />,
       title: "MENTORIA PRESENCIAL",
-      description: "Experiência presencial única com 4h de reunião + 2 encontros quinzenais online",
-      date: "Presencial",
-      iconClassName: "text-yellow-400",
-      titleClassName: "text-yellow-400",
-      className: "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0"
+      description: "Experiência presencial única com o Jotta te treinando nos 5 pilares, 4 horas de reunião mais 2 encontros quinzenais online, com todos os custos incluso.",
+      category: "Presencial",
+      color: "yellow" as const
     },
     {
-      icon: <Video className="size-4 text-green-300" />,
-      title: "MENTORIA ONLINE",
-      description: "3h de reunião orientando nos 5 pilares + 3 encontros quinzenais",
-      date: "Online",
-      iconClassName: "text-green-400",
-      titleClassName: "text-green-400",
-      className: "[grid-area:stack] translate-x-16 translate-y-10 hover:-translate-y-1 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0"
+      icon: <Video className="size-6" />,
+      title: "MENTORIA ONLINE", 
+      description: "3 horas de reunião para entender seu momento orientando nos 5 pilares além de 3 encontros online quinzenais para alinhamentos.",
+      category: "Online",
+      color: "green" as const
     },
     {
-      icon: <Clock className="size-4 text-blue-300" />,
+      icon: <Clock className="size-6" />,
       title: "CONSULTORIA 3 HORAS",
-      description: "Treinamento online para ajustar pontos específicos dos pilares",
-      date: "3h",
-      iconClassName: "text-blue-400",
-      titleClassName: "text-blue-400",
-      className: "[grid-area:stack] translate-x-32 translate-y-20 hover:translate-y-10"
-    }
-  ];
-
-  const additionalServices = [
+      description: "Treinamento online ideal para quem já tem clareza e resultados mas deseja ajustar pontos específicos dos pilares.",
+      category: "3h",
+      color: "blue" as const
+    },
     {
-      icon: <Users className="size-4 text-purple-300" />,
+      icon: <Users className="size-6" />,
       title: "CONSULTORIA 90 MIN",
-      description: "Forma mais acessível de ter orientações diretas com o Jotta",
-      date: "90min",
-      iconClassName: "text-purple-400",
-      titleClassName: "text-purple-400",
-      className: "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0"
+      description: "A forma mais acessível de ter as orientações com o Jotta diretamente online para tirar dúvidas e ajustar a rota.",
+      category: "90min",
+      color: "purple" as const
     },
     {
-      icon: <BookOpen className="size-4 text-orange-300" />,
-      title: "AULAS GRAVADAS",
-      description: "Aulas em formato live, simples e objetivo para quem prefere ver e ouvir",
-      date: "Acesso",
-      iconClassName: "text-orange-400",
-      titleClassName: "text-orange-400",
-      className: "[grid-area:stack] translate-x-16 translate-y-10 hover:-translate-y-1 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0"
+      icon: <BookOpen className="size-6" />,
+      title: "AULAS FECHADAS GRAVADAS",
+      description: "Ideal para quem não gosta de ler e prefere ver e ouvir. São aulas em formato live de um jeito simples e muito objetivo.",
+      category: "Acesso",
+      color: "orange" as const
     },
     {
-      icon: <FileText className="size-4 text-red-300" />,
+      icon: <FileText className="size-6" />,
       title: "EBOOK 2",
-      description: "Material objetivo com estratégias 100% aplicáveis para sua jornada",
-      date: "Digital",
-      iconClassName: "text-red-400",
-      titleClassName: "text-red-400",
-      className: "[grid-area:stack] translate-x-32 translate-y-20 hover:translate-y-10"
+      description: "Material objetivo de acompanhamento com estratégias 100% aplicáveis que pode lhe ajudar muito na jornada.",
+      category: "Digital",
+      color: "red" as const
     }
   ];
 
@@ -75,16 +60,8 @@ const ServicesSection = () => {
             </h2>
           </div>
 
-          {/* Services Display Cards */}
-          <div className="space-y-16">
-            <div className="flex justify-center">
-              <DisplayCards cards={services} />
-            </div>
-            
-            <div className="flex justify-center">
-              <DisplayCards cards={additionalServices} />
-            </div>
-          </div>
+          {/* Services Cards */}
+          <ServiceCards cards={services} />
 
           {/* CTA Button */}
           <div className="text-center mt-16">
