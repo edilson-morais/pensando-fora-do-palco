@@ -66,8 +66,22 @@ const ServicesSection = () => {
             </h2>
           </div>
 
-          {/* Services Cards */}
-          <ServiceCards cards={services} />
+          {/* Main Content - Two Columns */}
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Professional Image - Left Column */}
+            <div className="flex-shrink-0">
+              <img 
+                src="/lovable-uploads/f350ad94-c6fa-4dc1-baf1-2fab61bcc5b6.png" 
+                alt="Jotta - Mentor e Consultor Profissional" 
+                className="w-80 h-auto rounded-lg shadow-xl"
+              />
+            </div>
+
+            {/* Services Cards - Right Column */}
+            <div className="flex-1">
+              <ServiceCards cards={services} />
+            </div>
+          </div>
 
           {/* CTA Button */}
           <div className="text-center mt-16">
