@@ -1,6 +1,7 @@
 
 import Hero from "@/components/Hero";
 import SixQuestions from "@/components/SixQuestions";
+import StrategySection from "@/components/StrategySection";
 import CommunicationSection from "@/components/CommunicationSection";
 import JottaProfile from "@/components/JottaProfile";
 import PositioningImpact from "@/components/PositioningImpact";
@@ -15,6 +16,7 @@ const Index = () => {
     <div>
       <Hero />
       <SixQuestions />
+      <StrategySection />
       <CommunicationSection />
       <JottaProfile />
       <PositioningImpact />
