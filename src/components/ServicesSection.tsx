@@ -67,7 +67,7 @@ const ServicesSection = () => {
           </div>
 
           {/* Two Column Layout */}
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 gap-12 items-start">
             {/* Left Column - Image */}
             <div>
               <img 
@@ -77,17 +77,17 @@ const ServicesSection = () => {
               />
             </div>
 
-            {/* Right Column - Cards Grid */}
-            <div className="relative">
-              <div className="grid grid-cols-3 gap-4">
+            {/* Right Column - Cards Grid + CTA */}
+            <div className="space-y-8">
+              <div className="grid grid-cols-3 gap-6">
                 {services.map((cardProps, index) => (
                   <ServiceCards key={index} cards={[cardProps]} />
                 ))}
               </div>
               
-              {/* CTA Button over cards */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="pointer-events-auto">
+              {/* CTA Button below cards */}
+              <div className="flex justify-center">
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                   <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
                     QUERO MAIS INFORMAÇÕES
                   </button>
