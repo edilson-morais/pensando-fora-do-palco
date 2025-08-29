@@ -1,15 +1,16 @@
 import { Button } from "@/components/ui/button";
-
 const Hero = () => {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=554797083422&text=Ol%C3%A1,+vim+da+p%C3%A1gina+*Pensando+Fora+do+Palco*";
-
-  return (
-    <header className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
+  return <header className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-yellow-400/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-green-500/8 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-yellow-400/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-green-500/8 rounded-full blur-3xl animate-pulse" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-yellow-400/5 rounded-full blur-3xl animate-pulse" style={{
+        animationDelay: '0.5s'
+      }}></div>
       </div>
       
       {/* Glassmorphism overlay */}
@@ -23,9 +24,9 @@ const Hero = () => {
             <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 shadow-2xl hover:bg-white/8 transition-all duration-500 hover:scale-[1.02]">
               <div className="space-y-6">
                 <div className="space-y-4">
-                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent leading-tight animate-fade-in hover:scale-105 transition-transform duration-300" style={{ fontFamily: 'Times, serif' }}>
-                    Pensando Fora do Palco - Mentoria em Marca Pessoal e Comunicação Estratégica
-                  </h1>
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent leading-tight animate-fade-in hover:scale-105 transition-transform duration-300" style={{
+                  fontFamily: 'Times, serif'
+                }}>Pensando Fora do Palco</h1>
                   <div className="relative">
                     <p className="text-lg md:text-xl text-gray-200 font-medium tracking-wide">
                       PORQUE A VIDA É UM SHOW.
@@ -66,7 +67,9 @@ const Hero = () => {
           </div>
           
           {/* Right Content - Modern Image Card with WhatsApp link */}
-          <div className="flex justify-center lg:justify-end animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="flex justify-center lg:justify-end animate-fade-in" style={{
+          animationDelay: '0.3s'
+        }}>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="block">
               <div className="relative group cursor-pointer">
                 {/* Glowing backdrop */}
@@ -74,24 +77,25 @@ const Hero = () => {
                 
                 {/* Main image container with glassmorphism */}
                 <div className="relative w-80 h-96 md:w-96 md:h-[500px] bg-gradient-to-br from-yellow-400/90 via-yellow-500/80 to-yellow-600/90 backdrop-blur-sm rounded-3xl overflow-hidden transform rotate-2 hover:rotate-0 transition-all duration-700 shadow-2xl border border-white/20 group-hover:scale-105">
-                  <img 
-                    src="/lovable-uploads/ece17cc7-916a-470c-acab-0f00f2a65427.png"
-                    alt="Jotta, especialista em comunicação e marca pessoal, apresentando estratégias para empresários"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    loading="eager"
-                  />
+                  <img src="/lovable-uploads/ece17cc7-916a-470c-acab-0f00f2a65427.png" alt="Jotta, especialista em comunicação e marca pessoal, apresentando estratégias para empresários" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="eager" />
                   
                   {/* Gradient overlay for depth */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
                   
                   {/* Floating elements */}
                   <div className="absolute top-4 right-4 w-3 h-3 bg-yellow-300 rounded-full animate-ping"></div>
-                  <div className="absolute bottom-8 left-6 w-2 h-2 bg-green-300 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                  <div className="absolute bottom-8 left-6 w-2 h-2 bg-green-300 rounded-full animate-pulse" style={{
+                  animationDelay: '0.5s'
+                }}></div>
                 </div>
                 
                 {/* Decorative elements */}
-                <div className="absolute -top-6 -left-6 w-12 h-12 border-2 border-yellow-400/40 rounded-full animate-spin" style={{ animationDuration: '8s' }}></div>
-                <div className="absolute -bottom-4 -right-4 w-8 h-8 border-2 border-green-400/40 rounded-lg animate-bounce" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute -top-6 -left-6 w-12 h-12 border-2 border-yellow-400/40 rounded-full animate-spin" style={{
+                animationDuration: '8s'
+              }}></div>
+                <div className="absolute -bottom-4 -right-4 w-8 h-8 border-2 border-green-400/40 rounded-lg animate-bounce" style={{
+                animationDelay: '1s'
+              }}></div>
               </div>
             </a>
           </div>
@@ -101,13 +105,11 @@ const Hero = () => {
       {/* Modern background pattern with animation */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="w-full h-full animate-pulse" style={{
-          backgroundImage: 'radial-gradient(circle at 25% 25%, #fbbf24 1px, transparent 1px)',
-          backgroundSize: '60px 60px',
-          animationDuration: '4s'
-        }}></div>
+        backgroundImage: 'radial-gradient(circle at 25% 25%, #fbbf24 1px, transparent 1px)',
+        backgroundSize: '60px 60px',
+        animationDuration: '4s'
+      }}></div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Hero;
