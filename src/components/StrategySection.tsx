@@ -1,4 +1,4 @@
-import jottaSpeaker from "/lovable-uploads/4feb49ee-3435-442b-a008-24615f9851b1.png";
+import jottaSpeaker from "/lovable-uploads/6e8ee130-ba1b-4cc8-90ae-62d9b8b32cbd.png";
 
 const StrategySection = () => {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=554797083422&text=Ol%C3%A1,+vim+da+p%C3%A1gina+*Pensando+Fora+do+Palco*";
