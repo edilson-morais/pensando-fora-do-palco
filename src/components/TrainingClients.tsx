@@ -42,40 +42,11 @@ const TrainingClients = () => {
             })}
           </div>
 
-          {/* Bottom photos grid */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
-            <div className="text-center">
-              <div className="aspect-square bg-gradient-to-br from-yellow-400/20 to-yellow-500/20 rounded-lg border border-yellow-400/30 overflow-hidden mb-4">
-                <img 
-                  src="/lovable-uploads/8af99987-4b01-455e-9953-b174d0dd4d28.png" 
-                  alt="O empresário artista"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <p className="text-yellow-400 font-semibold">O empresário artista</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="aspect-square bg-gradient-to-br from-yellow-400/20 to-yellow-500/20 rounded-lg border border-yellow-400/30 overflow-hidden mb-4">
-                <img 
-                  src="/lovable-uploads/3496808d-f609-475b-adfc-b5cd692ca235.png" 
-                  alt="A forma que você veste"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <p className="text-yellow-400 font-semibold">A forma que você veste</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="aspect-square bg-gradient-to-br from-yellow-400/20 to-yellow-500/20 rounded-lg border border-yellow-400/30 overflow-hidden mb-4">
-                <img 
-                  src="/lovable-uploads/b8595a2d-44c0-41bb-82b6-cad1cc55121a.png" 
-                  alt="Esses 3, estão aumentando"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <p className="text-yellow-400 font-semibold">Esses 3, estão aumentando</p>
-            </div>
+          {/* Bottom photos grid placeholder */}
+          <div className="mt-16 grid grid-cols-4 md:grid-cols-6 gap-4">
+            {Array.from({ length: 8 }, (_, i) => (
+              <div key={i} className="aspect-square bg-gradient-to-br from-yellow-400/20 to-yellow-500/20 rounded-lg border border-yellow-400/30"></div>
+            ))}
           </div>
         </div>
       </div>
