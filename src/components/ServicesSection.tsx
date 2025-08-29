@@ -10,42 +10,48 @@ const ServicesSection = () => {
       title: "MENTORIA PRESENCIAL",
       description: "Experiência presencial única com o Jotta te treinando nos 5 pilares, 4 horas de reunião mais 2 encontros quinzenais online, com todos os custos incluso.",
       category: "Presencial",
-      color: "yellow" as const
+      color: "yellow" as const,
+      link: whatsappLink
     },
     {
       icon: <Video className="size-6" />,
       title: "MENTORIA ONLINE", 
       description: "3 horas de reunião para entender seu momento orientando nos 5 pilares além de 3 encontros online quinzenais para alinhamentos.",
       category: "Online",
-      color: "green" as const
+      color: "green" as const,
+      link: whatsappLink
     },
     {
       icon: <Clock className="size-6" />,
       title: "CONSULTORIA 3 HORAS",
       description: "Treinamento online ideal para quem já tem clareza e resultados mas deseja ajustar pontos específicos dos pilares.",
       category: "3h",
-      color: "blue" as const
+      color: "blue" as const,
+      link: whatsappLink
     },
     {
       icon: <Users className="size-6" />,
       title: "CONSULTORIA 90 MIN",
       description: "A forma mais acessível de ter as orientações com o Jotta diretamente online para tirar dúvidas e ajustar a rota.",
       category: "90min",
-      color: "purple" as const
+      color: "purple" as const,
+      link: whatsappLink
     },
     {
       icon: <BookOpen className="size-6" />,
       title: "AULAS FECHADAS GRAVADAS",
       description: "Ideal para quem não gosta de ler e prefere ver e ouvir. São aulas em formato live de um jeito simples e muito objetivo.",
       category: "Acesso",
-      color: "orange" as const
+      color: "orange" as const,
+      link: whatsappLink
     },
     {
       icon: <FileText className="size-6" />,
       title: "EBOOK 2",
       description: "Material objetivo de acompanhamento com estratégias 100% aplicáveis que pode lhe ajudar muito na jornada.",
       category: "Digital",
-      color: "red" as const
+      color: "red" as const,
+      link: whatsappLink
     }
   ];
 

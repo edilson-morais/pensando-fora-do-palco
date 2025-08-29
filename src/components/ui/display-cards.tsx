@@ -9,6 +9,7 @@ interface ServiceCardProps {
   description?: string;
   category?: string;
   color?: "yellow" | "green" | "blue" | "purple" | "orange" | "red";
+  link?: string;
 }
 
 function ServiceCard({
@@ -18,6 +19,7 @@ function ServiceCard({
   description = "Descrição do serviço",
   category = "Online",
   color = "yellow",
+  link,
 }: ServiceCardProps) {
   const colorVariants = {
     yellow: {
@@ -66,16 +68,8 @@ function ServiceCard({
 
   const colorStyle = colorVariants[color];
 
-  return (
-    <div
-      className={cn(
-        "relative group bg-black/40 backdrop-blur-sm border-2 rounded-2xl p-6 transition-all duration-500 hover:scale-105 hover:shadow-2xl",
-        colorStyle.bg,
-        colorStyle.border,
-        colorStyle.glow,
-        className
-      )}
-    >
+  const CardContent = () => (
+    <>
       {/* Background glow effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       
@@ -100,6 +94,39 @@ function ServiceCard({
           {description}
         </p>
       </div>
+    </>
+  );
+
+  if (link) {
+    return (
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={cn(
+          "relative group bg-black/40 backdrop-blur-sm border-2 rounded-2xl p-6 transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer block",
+          colorStyle.bg,
+          colorStyle.border,
+          colorStyle.glow,
+          className
+        )}
+      >
+        <CardContent />
+      </a>
+    );
+  }
+
+  return (
+    <div
+      className={cn(
+        "relative group bg-black/40 backdrop-blur-sm border-2 rounded-2xl p-6 transition-all duration-500 hover:scale-105 hover:shadow-2xl",
+        colorStyle.bg,
+        colorStyle.border,
+        colorStyle.glow,
+        className
+      )}
+    >
+      <CardContent />
     </div>
   );
 }
