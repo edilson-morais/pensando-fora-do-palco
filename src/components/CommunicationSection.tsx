@@ -17,29 +17,31 @@ const CommunicationSection = () => {
             {[
               {
                 bg: "bg-blue-100",
-                image: "/lovable-uploads/98d1aebf-c2e1-44ca-bf50-815df0b5dbbd.png",
+                image: "/lovable-uploads/626660fc-e5e5-43c3-9b9f-ad2dad2cd855.png",
                 title: "O empresário artista",
                 subtitle: "(Véio da Havan)",
                 description: "não precisa aparecer, ele só faz isso pois amplifica expressivamente seu posicionamento na mente da audiência sendo visto como líder em todo movimento de marketing."
               },
               {
                 bg: "bg-green-100", 
-                image: "/lovable-uploads/98d1aebf-c2e1-44ca-bf50-815df0b5dbbd.png",
+                image: "/lovable-uploads/dc05bf68-81f0-446f-b8e6-fefb1ddc8b5a.png",
                 title: "A forma que você veste",
                 description: "os lugares que frequenta, o que concorda ou discorda, o que fala, como fala, com quem fala, porque fala, quem segue nas redes sociais, o que posta, te posiciona, e é ai que podemos te orientar."
               },
               {
                 bg: "bg-blue-400",
-                image: "/lovable-uploads/98d1aebf-c2e1-44ca-bf50-815df0b5dbbd.png",
+                image: "/lovable-uploads/33f9fe33-e1e5-4392-a59f-7b711b1a12d7.png",
                 title: "Esses 3, estão aumentando",
                 description: "faturamento e lucro sendo eles mesmos, e é possível usar as mesmas estratégias no seu negócio mesmo sendo tímido... Quer um exemplo de quem chamou a atenção sem nem falar? Charlie Chaplin."
               }
             ].map((person, index) => (
               <div key={index} className={`${person.bg} rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 shadow-lg`}>
                 <div className="aspect-square bg-white rounded-lg mb-4 overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                    <span className="text-gray-500">Foto</span>
-                  </div>
+                  <img 
+                    src={person.image} 
+                    alt={person.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="space-y-3">
                   <h3 className="font-bold text-lg">{person.title}</h3>
