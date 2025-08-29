@@ -16,9 +16,9 @@ const JottaProfile = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400/20 to-orange-400/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500 opacity-75"></div>
                 <div className="relative w-80 h-96 md:w-96 md:h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-white/20">
                   <img 
-                    src="/lovable-uploads/2b6ac948-1f14-415e-a354-a486c58bd8c4.png" 
+                    src="/lovable-uploads/8fbba91b-9b21-4650-9cf9-9639dc14ad9f.png" 
                     alt="Jotta - CEO da MJ Backline e criador do projeto PFDP"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
               </div>
