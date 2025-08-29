@@ -18,48 +18,13 @@ const PositioningImpact = () => {
                 IMPACTO DO POSICIONAMENTO
               </h2>
               
-              {/* Mock mobile screenshots */}
-              <div className="space-y-4">
-                <div className="bg-gray-800 rounded-lg p-4 border border-gray-700">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-8 h-8 bg-yellow-400 rounded-full"></div>
-                    <span className="text-sm">@empresariooficial</span>
-                  </div>
-                  <p className="text-sm mb-2">
-                    <span className="text-blue-400">@rdsrj</span> não autor, 
-                    pensando fora do palco, sempre um 
-                    passo à frente
-                  </p>
-                  <div className="text-xs text-gray-400 flex items-center gap-4">
-                    <span>👁️ 2k mil visualizações</span>
-                  </div>
-                </div>
-
-                <div className="bg-gray-800 rounded-lg p-4 border border-gray-700">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-8 h-8 bg-green-400 rounded-full"></div>
-                    <span className="text-sm">sandroeplayers</span>
-                    <span className="text-xs bg-blue-500 px-2 py-1 rounded">Seguir</span>
-                  </div>
-                  <p className="text-sm mb-2">
-                    NÃO FAÇO QUESTÃO DE 
-                    TOCAR PRA POBRE
-                  </p>
-                  <div className="text-xs text-gray-400">
-                    <span>👁️ 974 mil</span>
-                  </div>
-                </div>
-
-                <div className="bg-gray-800 rounded-lg p-4 border border-gray-700">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-6 h-6 bg-blue-400 rounded-full"></div>
-                    <span className="text-xs">spideroaneersontiva curtiu seu reel · 3s</span>
-                  </div>
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-6 h-6 bg-purple-400 rounded-full"></div>
-                    <span className="text-xs">dil.saint.ro curtiu seu reel · 1h</span>
-                  </div>
-                </div>
+              {/* Mobile screenshots */}
+              <div className="flex justify-center">
+                <img 
+                  src="/lovable-uploads/7b9f7424-c669-4fe9-9d19-c8f832508409.png"
+                  alt="Screenshots de impacto do posicionamento"
+                  className="max-w-full h-auto rounded-lg"
+                />
               </div>
 
               <p className="text-sm text-gray-300 mt-4">
