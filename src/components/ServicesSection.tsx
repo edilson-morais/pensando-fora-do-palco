@@ -67,28 +67,28 @@ const ServicesSection = () => {
           </div>
 
           {/* Main Content - Two Column Layout */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-[1fr_2fr] gap-16 items-start">
             {/* Left Column - Professional Image */}
             <div className="flex justify-center lg:justify-start">
               <img 
                 src="/lovable-uploads/9ff37c74-07b7-4436-959f-7a30ffbe1c28.png" 
                 alt="Jotta - Professional Mentor" 
-                className="w-full max-w-md h-auto object-cover"
+                className="w-full max-w-sm h-auto object-cover"
               />
             </div>
 
-            {/* Right Column - Services Cards */}
-            <div className="space-y-6">
-              <div className="grid grid-cols-3 gap-4 max-w-4xl">
+            {/* Right Column - Services Cards and CTA */}
+            <div className="relative">
+              <div className="grid grid-cols-3 gap-4 mb-8">
                 {services.map((cardProps, index) => (
-                  <div key={index} className="h-[200px]">
+                  <div key={index} className="h-[240px]">
                     <ServiceCards cards={[cardProps]} />
                   </div>
                 ))}
               </div>
               
-              {/* CTA Button */}
-              <div className="text-center mt-8">
+              {/* CTA Button - Positioned over the cards */}
+              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                   <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
                     QUERO MAIS INFORMAÇÕES
