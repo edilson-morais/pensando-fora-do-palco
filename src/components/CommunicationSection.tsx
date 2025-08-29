@@ -36,7 +36,7 @@ const CommunicationSection = () => {
               }
             ].map((person, index) => (
               <div key={index} className={`${person.bg} rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 shadow-lg`}>
-                <div className="aspect-square bg-white rounded-lg mb-4 overflow-hidden">
+                <div className="aspect-square rounded-lg mb-4 overflow-hidden">
                   <img 
                     src={person.image} 
                     alt={person.title}
