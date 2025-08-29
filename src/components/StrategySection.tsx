@@ -1,4 +1,6 @@
 const StrategySection = () => {
+  const whatsappLink = "https://api.whatsapp.com/send/?phone=554797083422&text=Ol%C3%A1,+vim+da+p%C3%A1gina+*Pensando+Fora+do+Palco*";
+
   return (
     <section className="py-20 bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
       {/* Background effects */}
@@ -11,30 +13,47 @@ const StrategySection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div className="space-y-8">
-              <div className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 backdrop-blur-sm rounded-2xl p-8 border border-yellow-400/30">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
-                  <span className="text-yellow-400">Você veio buscar</span><br />
-                  <span className="text-white">estratégia para melhorar</span><br />
-                  <span className="text-yellow-400">sua comunicação e elevar</span><br />
-                  <span className="text-white">seu posicionamento.</span>
-                </h2>
-                <div className="w-16 h-1 bg-gradient-to-r from-yellow-400 to-amber-400 rounded-full"></div>
+            {/* Left Content - JOTTA Frame */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="relative">
+                {/* Golden frame */}
+                <div className="w-80 h-96 border-2 border-yellow-400 rounded-3xl bg-black/80 backdrop-blur-sm flex items-center justify-center">
+                  <div className="text-center">
+                    <h3 className="text-6xl font-bold text-yellow-400 tracking-wider">
+                      JOTTA
+                    </h3>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Right Content - Image */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400/20 to-amber-400/20 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500 opacity-75 group-hover:opacity-100"></div>
-                <div className="relative bg-gradient-to-br from-yellow-400/10 to-amber-500/10 backdrop-blur-sm rounded-2xl overflow-hidden transform hover:scale-105 transition-all duration-500 border border-yellow-400/30">
-                  <img 
-                    src="/lovable-uploads/db6f31d2-c713-46ef-8a28-942580ccba59.png"
-                    alt="Professional communicator speaking"
-                    className="w-full h-auto"
-                  />
-                </div>
+            {/* Right Content - Text and CTA */}
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+                  <span className="text-red-500 text-6xl">"</span>
+                  <span className="text-white">Você veio buscar</span><br />
+                  <span className="text-white">estratégia para</span><br />
+                  <span className="text-white">melhorar</span><br />
+                  <span className="text-white">sua comunicação</span><br />
+                  <span className="text-white">e elevar</span><br />
+                  <span className="text-white">seu</span><br />
+                  <span className="text-white">posicionamento.</span>
+                  <span className="text-red-500 text-6xl">"</span>
+                </h2>
+                
+                <p className="text-yellow-400 text-xl font-bold">
+                  Você não chegou aqui por acaso!
+                </p>
+              </div>
+
+              {/* CTA Button */}
+              <div className="pt-6">
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                  <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg w-full md:w-auto">
+                    MINHA MARCA PESSOAL É PRIORIDADE
+                  </button>
+                </a>
               </div>
             </div>
           </div>
