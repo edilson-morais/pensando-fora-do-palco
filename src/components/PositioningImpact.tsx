@@ -71,12 +71,11 @@ const PositioningImpact = () => {
             {/* Right side - Profile and CTA */}
             <div className="flex flex-col items-center text-center space-y-8">
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400/20 to-orange-400/20 rounded-3xl blur-lg"></div>
-                <div className="relative w-64 h-80 bg-gradient-to-br from-yellow-400/90 via-yellow-500/80 to-orange-600/90 rounded-3xl overflow-hidden shadow-2xl border border-white/20">
-                  <div className="w-full h-full bg-gradient-to-br from-gray-800 to-black flex items-center justify-center">
-                    <span className="text-4xl font-bold text-yellow-400">JOTTA</span>
-                  </div>
-                </div>
+                <img 
+                  src="/lovable-uploads/5b9bbdb5-82b3-44c9-96e5-3870962e951b.png" 
+                  alt="Jotta - Especialista em Posicionamento"
+                  className="w-64 h-80 md:w-72 md:h-96 object-cover object-center"
+                />
               </div>
 
               <div className="space-y-4">
