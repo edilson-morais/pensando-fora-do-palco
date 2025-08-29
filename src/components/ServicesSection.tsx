@@ -58,7 +58,7 @@ const ServicesSection = () => {
   return (
     <section className="py-20 bg-black text-white relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
             <h2 id="services" className="text-4xl md:text-5xl font-bold mb-12">
@@ -66,34 +66,16 @@ const ServicesSection = () => {
             </h2>
           </div>
 
-          {/* Two Column Layout */}
-          <div className="grid grid-cols-2 gap-12 items-start">
-            {/* Left Column - Image */}
-            <div>
-              <img 
-                src="/lovable-uploads/9ff37c74-07b7-4436-959f-7a30ffbe1c28.png" 
-                alt="Jotta - Professional Mentor" 
-                className="w-full h-auto"
-              />
-            </div>
+          {/* Services Cards */}
+          <ServiceCards cards={services} />
 
-            {/* Right Column - Cards Grid + CTA */}
-            <div className="space-y-8">
-              <div className="grid grid-cols-3 gap-6">
-                {services.map((cardProps, index) => (
-                  <ServiceCards key={index} cards={[cardProps]} />
-                ))}
-              </div>
-              
-              {/* CTA Button below cards */}
-              <div className="flex justify-center">
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                  <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-                    QUERO MAIS INFORMAÇÕES
-                  </button>
-                </a>
-              </div>
-            </div>
+          {/* CTA Button */}
+          <div className="text-center mt-16">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                QUERO MAIS INFORMAÇÕES
+              </button>
+            </a>
           </div>
         </div>
       </div>
