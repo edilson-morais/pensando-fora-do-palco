@@ -7,7 +7,7 @@ const Footer = () => {
         {/* Disclaimer */}
         <div className="text-center mb-8">
           <p className="text-sm leading-relaxed">
-            A Comunidade Pandeirando com Carlos Café não é uma empresa associada ao WhatsApp INC, Facebook INC, META ou qualquer uma de suas empresas, e não possui relação comercial ou consentimento para uso.
+            A Comunidade Pensando Fora do Palco não é uma empresa associada ao WhatsApp INC, Facebook INC, META ou qualquer uma de suas empresas, e não possui relação comercial ou consentimento para uso.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ const Footer = () => {
         {/* Main Footer Content */}
         <div className="text-center space-y-4">
           <h3 className="text-2xl font-bold text-orange-400">
-            Pandeirando com Carlos Café
+            Pensando Fora do Palco
           </h3>
           
           <div className="flex justify-center space-x-8 text-sm">
